@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Fuentes | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Carlos Fuentes</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I was one of the designers and prototypers for ParkHero, I led the user flow when it comes to the prototype.  One major challenge was designing a smooth flow for non-tech-savvy users; I overcame this by simplifying the interface and reducing decision friction. I developed many skills when using Figma making the prototype and it just made me more excited to do more UI/UX designs.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>My Works</h2>
+    <div class="project">
+      <h3>ParkHero – Smart Parking App</h3>
+      <p>A prototype for a parking solution that helps drivers locate and reserve parking spots efficiently.</p>
+      <p><strong>Tools Used:</strong> Figma, UX Design</p>
+      <a href="https://www.figma.com/proto/91qeUNxaAGAihOyhQtmLZu/ParkHero?node-id=95-210&starting-point-node-id=95%3A210&t=vUyK5pBwHbcH6cUk-1" target="_blank">View Prototype</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Carlos Sebastian Fuentes. I'm currently a full-time student with a passion for UI/UX design, web development, and programming.In addition to my academic journey, I work part-time at Marshalls where I’ve developed strong interpersonal skills and a grounded work ethic. Looking ahead, I aim to work in roles that allow me to bridge the gap between users and technology—whether it’s through front-end development, user research, or product design. I’m excited to keep building, learning, and sharing my growth through projects like this portfolio. </p>
+    
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: cfuentes9898@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/carlos-fuentes-68438a2b2" target="_blank">My Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Carlos Fuentes. All rights reserved.</p>
+  </footer>
+  <script>
+    const sections = document.querySelectorAll("section");
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    }, { threshold: 0.2 });
+  
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
